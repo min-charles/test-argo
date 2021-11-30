@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: mc
-  name: mc
+    app: mctest
+  name: mctest
   namespace: template
 spec:
   selector:
     matchLabels:
-      app: mc
+      app: mctest
   template:
     metadata:
       labels:
-        app: mc
+        app: mctest
     spec:
       containers:
       - image: testimage
-        name: mc
+        name: mctest
         ports:
         - containerPort: 80
           name: http
