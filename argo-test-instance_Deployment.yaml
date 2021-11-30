@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: mc
-  name: mc
+    app: argotest
+  name: argotest
   namespace: template
 spec:
   selector:
     matchLabels:
-      app: mc
+      app: argotest
   template:
     metadata:
       labels:
-        app: mc
+        app: argotest
     spec:
       containers:
       - image: testimage
-        name: mc
+        name: argotest
         ports:
         - containerPort: 80
           name: http
