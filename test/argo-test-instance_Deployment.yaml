@@ -15,7 +15,7 @@ spec:
         app: mctest
     spec:
       containers:
-      - image: testimage
+      - image: ubuntu
         name: mctest
         ports:
         - containerPort: 82
