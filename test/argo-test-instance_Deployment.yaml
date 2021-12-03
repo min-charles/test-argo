@@ -15,10 +15,10 @@ spec:
         app: mctest
     spec:
       containers:
-      - image: testimage
+      - image: testimage2
         name: mctest
         ports:
-        - containerPort: 80
+        - containerPort: 82
           name: http
         resources:
           requests:
