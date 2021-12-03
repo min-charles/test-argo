@@ -18,7 +18,7 @@ spec:
       - image: testimage
         name: mctest
         ports:
-        - containerPort: 80
+        - containerPort: 82
           name: http
         resources:
           requests:
